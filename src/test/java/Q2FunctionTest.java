@@ -1,6 +1,6 @@
 import org.junit.Assert;
 import org.junit.Test;
-import tw.oscar.FunctionUtil;
+import tw.oscar.Q2FunctionUtil;
 
 import java.util.*;
 
@@ -16,7 +16,7 @@ public class Q2FunctionTest {
         list.add(23);
         list.add(9);
         int target = 13;
-        Assert.assertEquals(target,FunctionUtil.compute(list,target).stream().reduce((a,b) -> (int)a+(int)b).hashCode());
+        Assert.assertEquals(target, Q2FunctionUtil.compute(list,target).stream().reduce((a, b) -> (int)a+(int)b).hashCode());
 
     }
 }

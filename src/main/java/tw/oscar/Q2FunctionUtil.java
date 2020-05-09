@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class FunctionUtil {
+public class Q2FunctionUtil {
     public static Collection<Integer> compute(Collection<Integer> collection, int target) {
         Collection result = null;
         List list = collection.stream().collect(Collectors.toList());
